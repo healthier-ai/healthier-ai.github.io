@@ -2,7 +2,7 @@
 layout: default
 title: Healthier AI
 description: Open Healthy Intelligence for Humans
-image: /images/healthier-ai-1920.png
+image: /images/index.jpg
 photos:
   name: Pranshu Khanna
   license: CC BY-SA 4.0
