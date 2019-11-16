@@ -6,7 +6,7 @@ image: /images/index.jpg
 photos:
   name: Pranshu Khanna
   license: CC BY-SA 4.0
-  url: https://flic.kr/p/2hLsqpR
+  url: https://flic.kr/p/2hLtmHf
 ---
 
 # A Mentoring Program for Healthier AI Advocates!
