@@ -1,3 +1,14 @@
+---
+layout: default
+title: Healthier AI
+description: Open Healthy Intelligence for Humans
+image: /images/index.jpg
+photos:
+  name: Pranshu Khanna
+  license: CC BY-SA 4.0
+  url: https://flic.kr/p/2hLsqpR
+---
+
 # A Mentoring Program for Healthier AI Advocates!
 
 
