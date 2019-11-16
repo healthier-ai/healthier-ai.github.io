@@ -27,6 +27,6 @@ We hope to instill the following principles in the community and help the broade
 - Anticipating Market Pressures, Takeovers, and Hacks. Guard against undesirable use of data.
 
 ## What’s in it for you?
-- Become an Open Leader
+- Become an [Open Leader](https://foundation.mozilla.org/en/opportunity/mozilla-open-leaders/open-leaders-x/participants/)
 - Develop projects and content
 - Gain knowledge from experts in the community
