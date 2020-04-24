@@ -1,0 +1,11 @@
+function myfunction ()  {
+		 var x = document.getElementById("thisaswell") ;
+		 if ( x.classname === "this" )
+		   {  x.classname += "responsive" ; 
+			} 
+		else  {
+			  x.classname = "this" ; 
+		  }
+
+}
+
