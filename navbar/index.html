@@ -1,37 +1,262 @@
+<html>
 <head>
-	<link href = "navbar/index.css"  rel="stylesheet"  type = "text/css" >
-	<link href  = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " rel = "stylesheet" type = " text/css "> 
-	<script src="jquery-3.4.0.min.js"></script>
-    <script src  = "/home/yagna/Desktop/proj/hai/index/static/js/index.js"  class = "icon "  onclick = "myfunction()">  </script>
-</head>
-<nav>
-<div class = "this " id = "thisaswell" > 
-		<ul>
-			<button> X </button>
-			<li>
-				<a href = "#">Principles</a>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href = "#">Programs</a>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href = "#">Syllabus</a>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href = "# ">About </a>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href = "#">Stories</a>
-			</li>
-		</ul>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet"  href = "/home/yagna/Desktop/proj/healthier-ai.github.io-master/navbar/index.css" type="text/css">
+<style>
 
+
+.navigation {
+  overflow: hidden;
+  background-color: #0093FFFC;
+  font-family: Nexa,Light;
+}
+
+
+.navigation a {
+  float: left;
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navigation .stories {
+  position: relative;
+  left: 347px;
+  float: none;
+  margin-right: 60px;
+}
+
+.navigation .principles {
+  position: relative;
+  left: 367px;
+  float: none;
+  margin-right: 40px;
+}
+
+
+
+.navigation .syllabus {
+  position: relative ;
+  left : 250px ;
+  float: none;
+  margin-right: 40px ;
+
+}
+.navigation .about {
+  position: relative;
+  left: 294px;
+  float: none;
+  margin-right: 40px;
+}
+.navigation .dropdownlinks a {
+  position: relative;
+  left: 17px;}
+.here {
+  position: relative;
+  display: block;
+  left:200px;
+}
+.dropdown {
+  float:left;
+
+  overflow: hidden;
+}
+
+.dropdown .btn {
+  cursor: pointer;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.navigation a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+
+}
+.dropdownlinks {
+  display:none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  position: relative;
+  left: 316px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navigation .drop2  {
+  display: none;
+}
+
+.dropdownlinks a {
+  float: none;
+  color: black;
+  position: relative;
+  right:50px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdownlinks a:hover {
+  background-color: #ddd;
+}
+
+
+.show {
+  display: block;
+  position: absolute;
+  left: 162px;
+}
+
+@media screen (min-width : 950px) and {
+.navigation .drop2{
+  display: none;
+}
+}
+
+@media screen and (max-width:1350px)
+ {
+
+   .navigation {
+     overflow: hidden;
+     background-color:blue;
+     width: 1250px;
+
+     font-family: Arial, Helvetica, sans-serif;
+   }
+.navigation a {
+    display: none;
+  }
+
+
+
+.navigation .drop2 {
+  display: block ;
+}
+
+
+
+.navigation .programs {
+    display: none;
+  }
+
+
+ }
+
+@media screen and (max-width:1350px)  {
+  .navigation .stories {
+       position: relative;
+       left: 280px;
+       float: none;
+       margin-right: 60px;
+     }
+
+
+  .navigation .principles {
+       position: relative;
+       left: 280px;
+       float: none;
+       margin-right: 40px;
+     }
+
+
+  .navigation .syllabus {
+       position: relative ;
+       left : 180px ;
+       float: none;
+       margin-right: 40px ;
+
+     }
+
+  .navigation .programs {
+    position:relative;
+    right:19px;
+
+  }
+
+
+
+  .navigation .about {
+       position: relative;
+       left: 220px;
+       float: none;
+       margin-right: 40px;
+     }
+
+ }
+
+</style>
+
+</head>
+<body>
+
+
+<div class="navigation">
+
+      <div class="principles" id=""="this">
+        <a href="#">principles</a>
+      </div>
+      <div class="dropdown">
+        <div class="programs" >
+          <button class="btn" onclick="myFunction()" id="this" >programs
+            <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+      <div class="dropdownlinks" id="myDropdown">
+        <a href="#" >programs</a>
+        <a href="#">programs</a>
+        <a href="#">programs</a>
+      </div>
+      </div>
+      <div class = "syllabus" id= "this">
+        <a href="#">syllabus</a>
+      </div>
+      <div class= "about" id="this">
+        <a href="#">about</a>
+      </div>
+      <div class = "stories" id="this">
+          <a href="#">stories</a>
+      </div>
+      <div class= "drop2 ">
+       <a href="javascript:void(0);" class="drop2" onclick="drop2()">
+         <i class="fa fa-bars"></i>
+  </a>
 </div>
-</nav>
+</div>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.btn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+
+  }
+}
+
+
+function drop2() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+</script>
+</html>
