@@ -1,0 +1,31 @@
+*{
+    background: rgb(5,148,252);
+    background: linear-gradient(45deg, rgba(5,148,252,1) 0%, rgba(24,250,254,1) 100%);
+    overflow-x: hidden
+}
+
+#log{
+    height:50em ;
+    width: 50em;
+    background: none;
+    position: absolute;
+    top:-13%;
+    right: -31%;
+    opacity:0.3;
+    transform: rotate(300deg);
+    max-width: 100%;
+    
+    
+}
+#logo{
+    height:60em ;
+    width: 60em;
+    background: none;
+    position: absolute;
+    top:20%;
+    left: -35%;
+    opacity:0.3;
+    transform: rotate(95deg);
+    max-width: 100%;
+    
+}
