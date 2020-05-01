@@ -3,8 +3,8 @@
     background: linear-gradient(45deg, rgba(5,148,252,1) 0%, rgba(24,250,254,1) 100%);
     overflow-x: hidden
 }
-
-#log{
+@media (min-width: 1281px){
+ #log{
     height:50em ;
     width: 50em;
     background: none;
@@ -15,9 +15,8 @@
     transform: rotate(300deg);
     max-width: 100%;
     
-    
-}
-#logo{
+} 
+ #logo{
     height:60em ;
     width: 60em;
     background: none;
@@ -26,6 +25,33 @@
     left: -35%;
     opacity:0.3;
     transform: rotate(95deg);
-    max-width: 100%;
+    /* max-width: 100%; */
     
+} 
+}
+@media (min-width: 320px) and (max-width: 480px)  {
+#log {
+    /* height: 50em; */
+    width: 50em;
+    background: none;
+    position: absolute;
+    top: -13%;
+    right: -31%;
+    opacity: 0.6;
+    transform: rotate(300deg);
+    max-width: 100%;
+}
+
+#logo {
+    /* height: 60em; */
+    width: 60em;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: -47%;
+    opacity: 0.6;
+    transform: rotate(95deg);
+    max-width: 100%;
+}
+
 }
