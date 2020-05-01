@@ -1,31 +1,81 @@
-*{
-    background: rgb(5,148,252);
-    background: linear-gradient(45deg, rgba(5,148,252,1) 0%, rgba(24,250,254,1) 100%);
+@font-face {
+    font-family: 'Nexa-Bold';
+    src: url('../fonts/Nexa-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Nexa-Light';
+    src: url('../fonts/Nexa-Light.otf') format('opentype');
+}
+
+* {
+    background: rgb(5, 148, 252);
+    background: linear-gradient(45deg, rgba(5, 148, 252, 1) 0%, rgba(24, 250, 254, 1) 100%);
     overflow-x: hidden
 }
 
-#log{
-    height:50em ;
+.main-heading h1 {
+    font-family: Nexa-Bold;
+    color: white;
+    font-size: 140px;
+    font-weight: 100;
+    margin-left: 580px;
+    margin-top: 550px;
+    position: absolute;
+    background: none;
+}
+
+.main-heading img {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    background: none;
+    margin-left: 780px;
+    margin-top: 250px;
+}
+
+.sub-heading h3 {
+    font-family: Nexa-Light;
+    color: white;
+    font-size: 55px;
+    margin-left: 670px;
+    margin-top: 700px;
+    position: absolute;
+    background: none;
+    font-weight: lighter;
+}
+
+.main-content pre {
+    font-family: Nexa-Light;
+    color: white;
+    font-size: 36px;
+    margin-left: 230px;
+    background: none;
+    position: absolute;
+    font-weight: lighter;
+    margin-top: 800px;
+}
+
+#log {
+    height: 50em;
     width: 50em;
     background: none;
     position: absolute;
-    top:-13%;
+    top: -13%;
     right: -31%;
-    opacity:0.3;
+    opacity: 0.3;
     transform: rotate(300deg);
     max-width: 100%;
-    
-    
 }
-#logo{
-    height:60em ;
+
+#logo {
+    height: 60em;
     width: 60em;
     background: none;
     position: absolute;
-    top:20%;
+    top: 20%;
     left: -35%;
-    opacity:0.3;
+    opacity: 0.3;
     transform: rotate(95deg);
     max-width: 100%;
-    
 }
