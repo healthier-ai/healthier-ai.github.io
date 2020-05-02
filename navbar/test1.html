@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href = "./css/style1.css" type = "text/css" >
+</head>
+<body>
+
+<div class="navigation" id="Here">
+  <a href="#" class="active">principles</a>
+  <div class="dropdown">
+      <!---Adding dropdown icon in between --->
+    <button class="dropbtn">pr
+      <i class="fa fa-chevron-circle-down"></i>
+      <button class="part">grams</<button>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">programs</a>
+      <a href="#">programs</a>
+      <a href="#">programs</a>
+    </div>
+    <!---Adding dropdown icon in between --->
+    <button class="dropbtn">syll
+      <i class="fa fa-chevron-circle-down"></i>
+      <button class="part">bus</<button>
+    </button>
+
+   <button class = "dropbtn">ab
+     <i class="fa fa-chevron-circle-down"></i>
+     <button class="part">ut</button>
+     </button>
+  </div>
+  <a href="#" >stories</a>
+  <!--- Vertical for mobile view --->
+  <a href="#" class = "vertical">programs</a>
+  <a href="#" class = "vertical">syllabus</a>
+  <a href="#" class = "vertical">about</a>
+  <a href="#" class = "vertical">stories</a>
+  <!--- Calling func drop() --->
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="drop()"></a>
+</div>
+<!---- defined function drop() --->
+<script>
+function drop() {
+  var x = document.getElementById("Here");
+  if (x.className === "navigation") {
+    x.className += " responsive";
+  } else {
+    x.className = "navigation";
+  }
+}
+</script>
+<!--- if class name mathes,func brings content down-->
+
+</body>
+</html>
