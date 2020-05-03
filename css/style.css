@@ -3,12 +3,13 @@
     background: linear-gradient(45deg, rgba(5,148,252,1) 0%, rgba(24,250,254,1) 100%);
     overflow-x: hidden
 }
+/* Background CSS */
 @media (min-width: 1281px){
  #log{
     height:50em ;
     width: 50em;
     background: none;
-    position: absolute;
+    position: fixed;
     top:-13%;
     right: -31%;
     opacity:0.3;
@@ -20,7 +21,7 @@
     height:60em ;
     width: 60em;
     background: none;
-    position: absolute;
+    position: fixed;
     top:20%;
     left: -35%;
     opacity:0.3;
@@ -54,4 +55,63 @@
     max-width: 100%;
 }
 
+}
+
+/* Main Content Css */
+@font-face {
+    font-family: 'Nexa-Bold';
+    src: url('../fonts/Nexa-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Nexa-Light';
+    src: url('../fonts/Nexa-Light.otf') format('opentype');
+}
+.content{
+    align-content: center;
+}
+
+.main-heading h1 {
+    font-family: Nexa-Bold;
+    color: white;
+    font-size: 8em;
+    font-weight: 100;
+    margin-left: 27rem;
+    margin-top: 15%;
+    position: absolute;
+    background: none;
+    max-width: 100%;
+}
+
+/* .main-heading img {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    background: none;
+    margin-left: 780px;
+    margin-top: 250px;
+} */
+
+.sub-heading h3 {
+    font-family: Nexa-Light;
+    color: white;
+    font-size: 3.5em;
+    margin-left: 32%;
+    margin-top: 24%;
+    position: absolute;
+    background: none;
+    font-weight: lighter;
+    max-width: 100%;
+}
+
+.main-content pre {
+    font-family: Nexa-Light;
+    color: white;
+    font-size: 2em;
+    margin-left: 12%;
+    margin-top: 30%;
+    background: none;
+    position: absolute;
+    font-weight: lighter;
+    max-width: 100%;
 }
