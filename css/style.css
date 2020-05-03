@@ -3,64 +3,9 @@
     background: linear-gradient(45deg, rgba(5,148,252,1) 0%, rgba(24,250,254,1) 100%);
     overflow-x: hidden
 }
-/* Background CSS */
-@media (min-width: 1281px){
- #log{
-    height:50em ;
-    width: 50em;
-    background: none;
-    position: fixed;
-    top:-13%;
-    right: -31%;
-    opacity:0.6;
-    transform: rotate(300deg);
-    max-width: 100%;
-    
-} 
- #logo{
-    height:60em ;
-    width: 60em;
-    background: none;
-    position: fixed;
-    top:20%;
-    left: -35%;
-    opacity:0.6;
-    transform: rotate(95deg);
-    /* max-width: 100%; */
-    
-} 
-}
-@media (min-width: 320px) and (max-width: 480px)  {
-#log {
-    /* height: 50em; */
-    width: 50em;
-    background: none;
-    position: absolute;
-    top: -13%;
-    right: -31%;
-    opacity: 0.6;
-    transform: rotate(300deg);
-    max-width: 100%;
-}
 
-#logo {
-    /* height: 60em; */
-    width: 60em;
-    background: none;
-    position: absolute;
-    top: 50%;
-    left: -47%;
-    opacity: 0.6;
-    transform: rotate(95deg);
-    max-width: 100%;
-}
 
-}
-
-<<<<<<< Updated upstream
 /* Main Content Css */
-=======
->>>>>>> Stashed changes
 @font-face {
     font-family: 'Nexa-Bold';
     src: url('../fonts/Nexa-Bold.otf') format('opentype');
@@ -70,17 +15,13 @@
     font-family: 'Nexa-Light';
     src: url('../fonts/Nexa-Light.otf') format('opentype');
 }
-<<<<<<< Updated upstream
 .content{
     align-content: center;
 }
-=======
->>>>>>> Stashed changes
 
 .main-heading h1 {
     font-family: Nexa-Bold;
     color: white;
-<<<<<<< Updated upstream
     font-size: 8em;
     font-weight: 100;
     margin-left: 27rem;
@@ -91,33 +32,17 @@
 }
 
 /* .main-heading img {
-=======
-    font-size: 140px;
-    font-weight: 100;
-    margin-left: 580px;
-    margin-top: 550px;
-    position: absolute;
-    background: none;
-}
-
-.main-heading img {
->>>>>>> Stashed changes
     height: 300px;
     width: 300px;
     position: absolute;
     background: none;
     margin-left: 780px;
     margin-top: 250px;
-<<<<<<< Updated upstream
 } */
-=======
-}
->>>>>>> Stashed changes
 
 .sub-heading h3 {
     font-family: Nexa-Light;
     color: white;
-<<<<<<< Updated upstream
     font-size: 3.5em;
     margin-left: 32%;
     margin-top: 24%;
@@ -125,20 +50,11 @@
     background: none;
     font-weight: lighter;
     max-width: 100%;
-=======
-    font-size: 55px;
-    margin-left: 670px;
-    margin-top: 700px;
-    position: absolute;
-    background: none;
-    font-weight: lighter;
->>>>>>> Stashed changes
 }
 
 .main-content pre {
     font-family: Nexa-Light;
     color: white;
-<<<<<<< Updated upstream
     font-size: 2em;
     margin-left: 12%;
     margin-top: 30%;
@@ -147,12 +63,63 @@
     font-weight: lighter;
     max-width: 100%;
 }
-=======
-    font-size: 36px;
-    margin-left: 230px;
-    background: none;
-    position: absolute;
-    font-weight: lighter;
-    margin-top: 800px;
-}
->>>>>>> Stashed changes
+
+
+/* Background CSS */
+@media (min-width: 1281px){
+    #log{
+       height:50em ;
+       width: 50em;
+       background: none;
+       position: fixed;
+       top:-13%;
+       right: -31%;
+       opacity:0.6;
+       transform: rotate(300deg);
+       max-width: 100%;
+       
+   } 
+    #logo{
+       height:60em ;
+       width: 60em;
+       background: none;
+       position: fixed;
+       top:20%;
+       left: -35%;
+       opacity:0.6;
+       transform: rotate(95deg);
+       /* max-width: 100%; */
+       
+   } 
+
+
+   }
+   @media (min-width: 320px) and (max-width: 480px)  {
+       .content{
+           max-width: 40%;
+       }
+   #log {
+       /* height: 50em; */
+       width: 50em;
+       background: none;
+       position: absolute;
+       top: -13%;
+       right: -31%;
+       opacity: 0.6;
+       transform: rotate(300deg);
+       max-width: 100%;
+   }
+   
+   #logo {
+       /* height: 60em; */
+       width: 60em;
+       background: none;
+       position: absolute;
+       top: 50%;
+       left: -47%;
+       opacity: 0.6;
+       transform: rotate(95deg);
+       max-width: 100%;
+   }
+   
+   }
