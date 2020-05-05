@@ -20,8 +20,56 @@ body {
     src: url('../fonts/Nexa-Light.otf') format('opentype');
 }
 
+.navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.down {
+    border-radius: 50%;
+    color: #13ddfe;
+    font-size: 2rem;
+    padding: 0 4px;
+    background-color: white;
+}
+
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    font-family: 'Nexa-Light';
+    color: white;
+    position: relative;
+    font-size: 2em;
+    display: inline-block;
+    padding: 0 1rem;
+}
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+.navbar ul li a:hover{
+    color: #fff;
+}
+.navbar ul li ul.dropdown{
+    display: none;
+    font-size: .5em;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+.navbar ul li:hover ul.dropdown{
+    display: block;
+}
+.navbar ul li ul.dropdown li{
+    display: block;
+}
+
 .content {
-    height: 100vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
