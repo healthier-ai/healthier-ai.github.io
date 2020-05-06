@@ -21,7 +21,7 @@ body {
 }
 
 .navbar {
-    height: 10vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -30,7 +30,7 @@ body {
 .down {
     border-radius: 50%;
     color: #13ddfe;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 0 4px;
     background-color: white;
 }
@@ -42,9 +42,9 @@ body {
     font-family: 'Nexa-Light';
     color: white;
     position: relative;
-    font-size: 2em;
+    font-size: 2.5em;
     display: inline-block;
-    padding: 0 1rem;
+    padding: 0 4rem;
 }
 .navbar ul li a{
     display: block;
@@ -75,6 +75,9 @@ body {
     align-items: center;
     text-align: center;
 }
+.fa{
+    font-size: 20px;
+  }
 
 .img {
     width: 100%;
@@ -95,7 +98,11 @@ body {
     right: -50%;
     transform: rotate(300deg);
 }
-
+img{
+    vertical-align: middle;
+    width: 15%;
+    padding: 5px;
+}
 .main-heading h1 {
     font-family: Nexa-Bold;
     color: white;
