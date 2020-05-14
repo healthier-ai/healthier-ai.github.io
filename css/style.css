@@ -68,6 +68,41 @@ body {
     display: block;
 }
 
+.burger {
+ 
+    cursor: pointer;
+    display:none;
+  background:white;
+  border-radius:2px;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+@keyframes navLinkFade{
+    from{
+         opacity: 0;
+         transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
 .content {
     height: 85vh;
     display: flex;
@@ -76,7 +111,7 @@ body {
     text-align: center;
 }
 .fa{
-    font-size:13px;
+    font-size:20px;
     
   }
 
@@ -139,6 +174,28 @@ img{
     .main-content p {
         font-size: 1em;
     }   
+    .navbar {
+        position: fixed; 
+        align-content: center;
+        right: 0px;
+        height: 50vh;
+        top: 10vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition:transform 0.5s linear;
+        z-index: 2;
+    }
+    .navbar li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        z-index: 3;
+    }
 }
 
 /* iPad Portrait */
