@@ -101,6 +101,8 @@ body {
     display: block;
     text-decoration: none;
     color: #fff;
+    font-size: 1.5em;
+    padding: 0 1rem;
 }
 .navbar ul li a:hover{
     color: #fff;
@@ -307,6 +309,8 @@ body {
     color: inherit;
     text-decoration: none;
     transition: color 0.4s ease;
+    font-family: 'Nexa-Light';
+    font-size: 1.5em;
 }
 
 /* End of Navbar */
