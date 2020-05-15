@@ -31,10 +31,12 @@ body {
 }
 
 .x {
+    top: -30%;
     position: absolute;
     transform: rotate(-30deg);
     background: none;
     transform-origin: bottom;
+    height: 18vh;
 }
 
 #one {
