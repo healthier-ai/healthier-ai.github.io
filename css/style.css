@@ -382,6 +382,14 @@ body {
     .mobile {
         display: block;
     }
+    .x{
+        top: -44%;
+        position: absolute;
+        transform: rotate(-30deg);
+        background: none;
+        transform-origin: bottom;
+        height: 17vh;
+    }
 }
 
 
