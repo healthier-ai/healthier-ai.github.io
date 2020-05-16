@@ -390,6 +390,16 @@ body {
     .mobile {
         display: block;
     }
+    .x {
+
+        top: -38%;
+        position: absolute;
+        transform: rotate(-30deg);
+        background: none;
+        transform-origin: bottom;
+        height: 15vh;
+    
+    }
 }
 
 
@@ -406,6 +416,16 @@ body {
 
     .main-content p {
         font-size: 2em;
+    }
+    .x {
+
+        top: -49%;
+        position: absolute;
+        transform: rotate(-30deg);
+        background: none;
+        transform-origin: bottom;
+        height: 15vh;
+    
     }
 }
 
@@ -443,6 +463,16 @@ body {
         transform: scale(0);
         transition: all 0.4s ease;
     }
+    .x {
+
+        top: -50%;
+        position: absolute;
+        transform: rotate(-30deg);
+        background: none;
+        transform-origin: bottom;
+        height: 15vh;
+    
+    }
 }
 
 /* Pixel 2XL */
@@ -477,6 +507,16 @@ body {
         justify-content: center;
         transform: scale(0);
         transition: all 0.4s ease;
+    }
+    .x {
+
+        top: -50%;
+        position: absolute;
+        transform: rotate(-30deg);
+        background: none;
+        transform-origin: bottom;
+        height: 15vh;
+    
     }
 }
 
@@ -513,5 +553,15 @@ body {
         justify-content: center;
         transform: scale(0);
         transition: all 0.4s ease;
+    }
+    .x {
+
+        top: -22%;
+        position: absolute;
+        transform: rotate(-30deg);
+        background: none;
+        transform-origin: bottom;
+        height: 15vh;
+    
     }
 }
