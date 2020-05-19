@@ -19,6 +19,12 @@ body {
     font-family: 'Nexa-Light';
     src: url('../fonts/Nexa-Light.otf') format('opentype');
 }
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.801);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255);
+}
 
 /* Leaf Animation */
 
@@ -32,13 +38,10 @@ body {
 
 .x {
 
-    left: 50%;
-    top: -22%;
     position: absolute;
     transform: rotate(-30deg);
-    background: none;
     transform-origin: bottom;
-    height: 15vh;
+    height: 124px;
 
 }
 
@@ -320,13 +323,13 @@ body {
 
 /* End of Navbar */
 
-.content {
+/* .content {
     height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+} */
 
 .img {
     width: 100%;
