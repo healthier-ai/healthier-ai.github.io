@@ -32,6 +32,7 @@ body {
 
 .x {
 
+    left: 50%;
     top: -22%;
     position: absolute;
     transform: rotate(-30deg);
@@ -374,7 +375,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px), (max-width: 768px) {
     .main-heading h1 {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .sub-heading h3 {
@@ -397,7 +398,7 @@ body {
         transform: rotate(-30deg);
         background: none;
         transform-origin: bottom;
-        height: 15vh;
+        left: 45%;
     
     }
 }
@@ -419,12 +420,12 @@ body {
     }
     .x {
 
-        top: -49%;
-        position: absolute;
-        transform: rotate(-30deg);
-        background: none;
-        transform-origin: bottom;
-        height: 15vh;
+        top: -46%;
+    left: 45%;
+    position: absolute;
+    transform: rotate(-30deg);
+    background: none;
+    transform-origin: bottom;
     
     }
 }
