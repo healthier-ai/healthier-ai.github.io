@@ -171,3 +171,16 @@ body {
         height: 100px;
     }
 }
+
+.buttons .btn{
+    border-radius: 30px;
+    background-image: linear-gradient( 111.3deg,  rgba(74,105,187,1) 9.6%, rgba(205,77,204,1) 93.6% );
+  
+}
+.buttons .btn:hover{
+    background-image: linear-gradient( 69.5deg,  rgba(189,73,255,0.99) 18.6%, rgba(254,76,227,1) 85.9% );
+}
+
+.buttons{
+    padding: 2%;
+}
