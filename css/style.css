@@ -1,15 +1,12 @@
-html {
-    min-height: 100%;
-}
-
-*, h1 {
-    margin: 0;
-    padding: 0;
-}
 body {
     background: rgb(5,148,252);
     background: linear-gradient(45deg, rgba(5,148,252,1) 0%, rgba(24,250,254,1) 100%);
+    font-family: Nexa-Light;
 }
+/* html{
+    height: 100vh;
+} */
+
 @font-face {
     font-family: 'Nexa-Bold';
     src: url('../fonts/Nexa-Bold.otf') format('opentype');
@@ -19,32 +16,26 @@ body {
     font-family: 'Nexa-Light';
     src: url('../fonts/Nexa-Light.otf') format('opentype');
 }
+
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.801);
 }
 .navbar-dark .navbar-nav .nav-link:hover {
     color: rgb(255, 255, 255);
 }
-
-/* Leaf Animation */
-
-.logo {
-    height: 100px; /* Change this size to adjust the leaf */
+.navbar-dark .navbar-toggler{
+    border-color: transparent;
+    color: transparent;
 }
 
-.logo img {
-    height: 20%;
-}
 
 .x {
-
     position: absolute;
     transform: rotate(-30deg);
     transform-origin: bottom;
     height: 124px;
 
 }
-
 #one {
     animation: yo 2s ease forwards;
 }
@@ -52,7 +43,6 @@ body {
 #two {
     animation: yoyo 2s ease forwards;
 }
-
 @keyframes yo {
     to {
         transform: rotate(0deg);
@@ -71,272 +61,11 @@ body {
     }
 }
 
-/* End of Leaf Animation */
-
-/* Navbar - Desktop */
-
-.mobile {
-    display: none;
-}
-
-.navbar {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-
-.down {
-    border-radius: 50%;
-    color: #13ddfe;
-    font-size: 2rem;
-    padding: 0 4px;
-    background-color: white;
-}
-
-.navbar ul{
-    list-style: none;
-}
-.navbar ul li{
-    font-family: 'Nexa-Light';
-    color: white;
-    position: relative;
-    font-size: 2em;
-    display: inline-block;
-    padding: 0 1rem;
-}
-.navbar ul li a{
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5em;
-    padding: 0 1rem;
-}
-.navbar ul li a:hover{
-    color: #fff;
-}
-.navbar ul li ul.dropdown{
-    display: none;
-    font-size: .5em;
-    position: absolute;
-    z-index: 999;
-    left: 0;
-}
-.navbar ul li:hover ul.dropdown{
-    display: block;
-}
-.navbar ul li ul.dropdown li{
-    display: block;
-}
-
-/* Navbar - Mobile Screen */
-
-
-.burger {
-    cursor: pointer;
-    display:none;
-  /* background:white; */
-    border-radius:2px;
-}
-.burger div{
-    width: 25px;
-    height: 3px;
-    /* background-color: black; */
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-@keyframes navLinkFade{
-    from{
-         opacity: 0;
-         transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-
-.toggle .line2{
-    opacity: 0;
-}
-
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-}
-
-.burger {
-    display: block;
-    z-index: 3;
-}
-.menu-wrap .hamburger {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1;
-    width: 50px;
-    height: 60px;
-    padding: 1rem;
-    background:transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-/*
-.fa {
-    font-size:20px;
-}*/
-
-.menu-wrap {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-.menu-wrap .toggler {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-}
- 
-/* Hamburger Line */
-.menu-wrap .hamburger > div {
-    position: relative;
-    flex: none;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
-}
-  
-/* Hamburger Lines - Top & Bottom */
-.menu-wrap .hamburger > div::before,
-.menu-wrap .hamburger > div::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: -10px;
-    width: 100%;
-    height: 2px;
-    background: inherit;
-}
-
-/* Moves Line Down */
-.menu-wrap .hamburger > div::after {
-    top: 10px;
-}
-
-/* Toggler Animation */
-.menu-wrap .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
-}
-  
-/* Turns Lines Into X */
-.menu-wrap .toggler:checked + .hamburger > div:before,
-.menu-wrap .toggler:checked + .hamburger > div:after {
-    top: 0;
-    transform: rotate(90deg);
-}
-
-/* Rotate On Hover When Checked */
-.menu-wrap .toggler:checked:hover + .hamburger > div {
-    transform: rotate(225deg);
-}
-
-/* Show Menu */
-.menu-wrap .toggler:checked ~ .menu {
-    visibility: visible;
-}
-
-.menu-wrap .toggler:checked ~ .menu > div {
-    transform: scale(1);
-    transition-duration: 0.4s ease;
-}
-
-.menu-wrap .toggler:checked ~ .menu > div > div {
-    opacity: 1;
-    transition:  opacity 0.4s ease 0.4s;
-}
-
-.menu-wrap .menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu-wrap .menu > div {
-    background: rgb(5,148,252);
-    background: linear-gradient(45deg, rgba(5,148,252,1) 0%, rgba(24,250,254,1) 100%);
-    border-radius: 45%;
-    width: 200vw;
-    height: 200vw;
-    display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    transition: all 0.4s ease;
-}
-
-
-.menu-wrap .menu > div > div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.menu-wrap .menu > div > div > ul > li {
-    list-style: none;
-    color: #fff;
-    font-size: 1.75em;
-    padding: 1rem;
-}
-
-.menu-wrap .menu > div > div > ul > li > a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.4s ease;
-    font-family: 'Nexa-Light';
-    font-size: 1.5em;
-}
-
-/* End of Navbar */
-
-/* .content {
-    height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-} */
-
 .img {
     width: 100%;
     height: 100%;
     opacity: 0.4;
 }
-
 #left {
     position: fixed;
     bottom: -40%;
@@ -350,6 +79,48 @@ body {
     right: -50%;
     transform: rotate(300deg);
 }
+
+ .dropdown-toggle::after {
+    display: none;
+    margin-left: 0;
+    border-top: none;
+    border-right: none;
+    border-bottom: 0;
+    border-left: none;
+    width: 100%;
+}
+.dropdown-menu.show{
+    text-align: center;
+}
+.down {
+    border-radius: 50%;
+    color: #13ddfe;
+    font-size: 1.5rem;
+    padding: 0 4px;
+    background-color: white;
+} 
+.button{
+    margin-left: 20rem;
+}
+ .navbar-dark .navbar-toggler-icon{
+    z-index: 1;
+    display: flex;
+    justify-content: end;
+} 
+.dropdown-menu{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+.dropdown-item:hover{
+    background-color: transparent;
+}
+.dropdown-menu h1{
+    color: white;
+}
+/* .navbar-expand-lg .navbar-nav .dropdown-menu{
+    position: sticky;
+} */
 
 .main-heading h1 {
     font-family: Nexa-Bold;
@@ -375,198 +146,46 @@ body {
     font-weight: lighter;
 }
 
-/* Rest of the devices */
-
-@media (min-width: 320px) and (max-width: 480px), (max-width: 768px) {
-    .main-heading h1 {
-        font-size: 3em;
-    }
-
-    .sub-heading h3 {
-        font-size: 2em;
-    }
-
-    .main-content p {
-        font-size: 1em;
-    }   
-    .navbar {
-        display: none;
-    }
-    .mobile {
-        display: block;
-    }
-    .x {
-
-        top: -38%;
-        position: absolute;
-        transform: rotate(-30deg);
-        background: none;
-        transform-origin: bottom;
-        left: 45%;
-    
-    }
-}
-
-
-/* iPad Portrait */
-
-@media (min-height: 768px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
     .main-heading h1 {
         font-size: 7em;
     }
-
-    .sub-heading h3 {
-        font-size: 4em;
+    .sub-heading h3{
+        font-size: 3em;
     }
-
     .main-content p {
+        font-size: 1.7em;
+    }
+}
+@media (max-width: 575.98px) {
+    .main-heading h1 {
+        font-size: 3.5em;
+    }
+    .sub-heading h3{
         font-size: 2em;
     }
-    .x {
-
-        top: -46%;
-    left: 45%;
-    position: absolute;
-    transform: rotate(-30deg);
-    background: none;
-    transform-origin: bottom;
-    
+    .main-content p {
+        font-size: 1em;
+    }
+    .x{
+        height: 100px;
     }
 }
 
-
-/* iPhone X */
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-    .main-heading h1 {
-        font-size: 4em;
-    }
-
-    .sub-heading h3 {
-        font-size: 2em;
-    }
-
-    .main-content p {
-        font-size: 1em;
-    }   
-    .navbar {
-        display: none;
-    }
-    .mobile {
-        display: block;
-    }
-    .menu-wrap .menu > div {
-        background: rgb(5,148,252);
-        background: linear-gradient(45deg, rgba(5,148,252,1) 0%, rgba(24,250,254,1) 100%);
-        border-radius: 45%;
-        width: 250vw;
-        height: 250vw;
-        display: flex;
-        flex: none;
-        align-items: center;
-        justify-content: center;
-        transform: scale(0);
-        transition: all 0.4s ease;
-    }
-    .x {
-
-        top: -50%;
-        position: absolute;
-        transform: rotate(-30deg);
-        background: none;
-        transform-origin: bottom;
-        height: 15vh;
-    
-    }
+.buttons .btn{
+    border-radius: 30px;
+    background-image: linear-gradient( 111.3deg,  rgba(74,105,187,1) 9.6%, rgba(205,77,204,1) 93.6% );
+  
+}
+.buttons .btn:hover{
+    background-image: linear-gradient( 69.5deg,  rgba(189,73,255,0.99) 18.6%, rgba(254,76,227,1) 85.9% );
 }
 
-/* Pixel 2XL */
-
-@media only screen and (min-width: 411px) and (max-width: 731px) {
-    .main-heading h1 {
-        font-size: 4em;
-    }
-
-    .sub-heading h3 {
-        font-size: 2em;
-    }
-
-    .main-content p {
-        font-size: 1em;
-    }   
-    .navbar {
-        display: none;
-    }
-    .mobile {
-        display: block;
-    }
-    .menu-wrap .menu > div {
-        background: rgb(5,148,252);
-        background: linear-gradient(45deg, rgba(5,148,252,1) 0%, rgba(24,250,254,1) 100%);
-        border-radius: 45%;
-        width: 250vw;
-        height: 250vw;
-        display: flex;
-        flex: none;
-        align-items: center;
-        justify-content: center;
-        transform: scale(0);
-        transition: all 0.4s ease;
-    }
-    .x {
-
-        top: -50%;
-        position: absolute;
-        transform: rotate(-30deg);
-        background: none;
-        transform-origin: bottom;
-        height: 15vh;
-    
-    }
+.buttons{
+    padding: 2%;
 }
 
-/* To fix Pixel 2 XL Landscape */
-
-@media screen and (max-height: 411px) and (min-width: 823px) {
-
-    .main-heading h1 {
-        font-size: 4em;
-    }
-
-    .sub-heading h3 {
-        font-size: 2em;
-    }
-
-    .main-content p {
-        font-size: 1em;
-    }   
-    .navbar {
-        display: none;
-    }
-    .mobile {
-        display: block;
-    }
-    .menu-wrap .menu > div {
-        background: rgb(5,148,252);
-    background: linear-gradient(45deg, rgba(5,148,252,1) 0%, rgba(24,250,254,1) 100%);
-        border-radius: 45%;
-        width: 250vw;
-        height: 250vw;
-        display: flex;
-        flex: none;
-        align-items: center;
-        justify-content: center;
-        transform: scale(0);
-        transition: all 0.4s ease;
-    }
-    .x {
-
-        top: -22%;
-        position: absolute;
-        transform: rotate(-30deg);
-        background: none;
-        transform-origin: bottom;
-        height: 15vh;
-    
-    }
+.main-two{
+    font-size: medium;
+    text-indent: 30%;
 }
