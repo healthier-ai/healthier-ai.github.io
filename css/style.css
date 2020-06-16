@@ -98,7 +98,7 @@ body {
     font-size: 1.5rem;
     padding: 0 4px;
     background-color: white;
-} 
+}
 .button{
     margin-left: 20rem;
 }
@@ -164,11 +164,13 @@ body {
     .sub-heading h3{
         font-size: 2em;
     }
-    .main-content p {
-        font-size: 1em;
-    }
     .x{
         height: 100px;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        letter-spacing: 0.6rem;
     }
 }
 
@@ -189,12 +191,27 @@ body {
     font-size: medium;
     text-indent: 30%;
 } */
-.con{
+.cont{
     font-size: .8rem;
+    border: 1px solid white;
+    border-radius: 3rem;
 }
-.card{
-    background-color: transparent;
-    border: 2px solid white;
+footer li{
+    list-style: none;
+    position: relative;
+    vertical-align: bottom;
+    color: white;
+}
+.icons{
+    margin: auto 0rem 1rem;
+}
+footer{
+    color: white;
+    border: 3px solid white;
+    border-radius: 3rem;
+}
+footer h1,h4{
+    text-align: left;
 }
 /* animation nav */
 /* .navbar-nav{
