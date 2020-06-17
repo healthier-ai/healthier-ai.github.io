@@ -2,6 +2,7 @@ body {
     background: rgb(5,148,252);
     background: linear-gradient(45deg, rgba(5,148,252,1) 0%, rgba(24,250,254,1) 100%);
     font-family: Nexa-Light;
+    color: white;
 }
 /* html{
     height: 100vh;
@@ -195,6 +196,21 @@ body {
     font-size: .8rem;
     border: 1px solid white;
     border-radius: 3rem;
+}
+.mentor h2{
+    line-height: 1.5;
+}
+.imgs{
+    height: 75px;
+}
+.mentor .card{
+    background-color: transparent;
+    border: 7px solid white;
+    border-radius: 2rem;
+    margin: 0 auto;
+}
+.fa{
+    color: white;
 }
 footer li{
     list-style: none;
