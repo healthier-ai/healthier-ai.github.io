@@ -197,6 +197,33 @@ body {
     border: 1px solid white;
     border-radius: 3rem;
 }
+.nav-tabs .nav-link{
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+.nav-tabs .nav-link.active{
+    height: 100%;
+    color: rgb(5,148,252);
+    border-radius: 0.3rem 0 0 0;
+}
+.nav-tabs #nav-profile-tab{
+    border-radius: 0rem 0.3rem 0 0;
+}
+.tabstyle .cardtop{
+    border: 5px solid white;
+    border-radius: 0.7rem 0.7rem 0 0;
+    background-color: transparent;
+    border-bottom: none;
+    width:fit-content;
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
+}
+.tabstyle .cardbottom{
+    border: 5px solid white;
+    border-radius: 0 0.5rem 0.5rem 0.5rem ;
+    background-color: transparent;
+}
 .mentor h2{
     line-height: 1.5;
 }
