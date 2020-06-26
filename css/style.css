@@ -213,6 +213,12 @@ body {
     text-indent: 30%;
 } */
 
+#bold {
+    font-family: Nexa-Bold;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
 .cont {
     font-size: .8rem;
     border: 1px solid white;
