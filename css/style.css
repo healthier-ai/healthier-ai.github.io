@@ -1,6 +1,6 @@
 body {
-    background: rgb(5, 148, 252);
-    background: linear-gradient(45deg, rgba(5, 148, 252, 1) 0%, rgba(24, 250, 254, 1) 100%);
+    background: #289ffd;
+    background: #289ffd;
     font-family: Nexa-Light;
     color: white;
 }
@@ -9,6 +9,19 @@ body {
 /* html{
     height: 100vh;
 } */
+
+
+/* Open-Sans Font */
+
+#os {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+#osr {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
 
 #ah {
     color: rgb(5, 148, 252);
@@ -264,16 +277,19 @@ body {
 .imgs {
     height: 75px;
 }
-.mentorHex .col{
+
+.mentorHex .col {
     padding: 0;
 }
 
-svg{
+svg {
     width: 95%;
 }
-.menticons .fa{
+
+.menticons .fa {
     color: white;
 }
+
 .mentor .card {
     background-color: transparent;
     border: 7px solid white;
@@ -368,4 +384,19 @@ h4 {
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-color: transparent;
+}
+
+#bt {
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 8px 1px 2px 1px;
+    border: transparent;
+    background-color: white;
+    font-family: Nexa-Bold;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: rgb(5, 148, 252);
 }
