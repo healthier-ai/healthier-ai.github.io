@@ -264,7 +264,16 @@ body {
 .imgs {
     height: 75px;
 }
+.mentorHex .col{
+    padding: 0;
+}
 
+svg{
+    width: 95%;
+}
+.menticons .fa{
+    color: white;
+}
 .mentor .card {
     background-color: transparent;
     border: 7px solid white;
