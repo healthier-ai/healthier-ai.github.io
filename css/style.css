@@ -285,6 +285,11 @@ body {
 svg {
     width: 95%;
 }
+#hexborder{
+    stroke-width:2;
+    stroke: white;
+    
+}
 
 .menticons .fa {
     color: white;
