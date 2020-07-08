@@ -285,10 +285,10 @@ body {
 svg {
     width: 95%;
 }
-#hexborder{
-    stroke-width:2;
+
+#hexborder {
+    stroke-width: 2;
     stroke: white;
-    
 }
 
 .menticons .fa {
@@ -319,13 +319,15 @@ footer li {
 
 footer {
     color: white;
-    border: 3px solid white;
+    border: 6px solid white;
     border-radius: 3rem;
+    height: 300px;
 }
 
 footer h1,
 h4 {
     text-align: left;
+    font-size: 15px;
 }
 
 
