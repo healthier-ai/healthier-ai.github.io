@@ -24,7 +24,7 @@ body {
 }
 
 #ah {
-    color: rgb(5, 148, 252);
+    color: #6f42c1;
 }
 
 @font-face {
@@ -119,7 +119,7 @@ body {
 
 .down {
     border-radius: 50%;
-    color: #13ddfe;
+    color: #6f42c1;
     font-size: 1.5rem;
     padding: 0 4px;
     background-color: white;
@@ -281,8 +281,6 @@ body {
 .mentorHex .col {
     padding: 0;
 }
-
-
 
 #hexborder {
     stroke-width: 2;
