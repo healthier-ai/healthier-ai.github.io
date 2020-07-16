@@ -1,5 +1,5 @@
 body {
-    background: #6f42c1;
+    /* background: pink; */
     background: #6f42c1;
     font-family: Nexa-Light;
     color: white;
@@ -86,7 +86,7 @@ body {
 .img {
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    opacity: 0.9;
 }
 
 #left {
@@ -94,6 +94,7 @@ body {
     bottom: -40%;
     left: -50%;
     transform: rotate(90deg);
+    background-blend-mode: screen;
 }
 
 #right {
@@ -101,6 +102,7 @@ body {
     top: -40%;
     right: -50%;
     transform: rotate(300deg);
+    background-blend-mode: lighten;
 }
 
 .dropdown-toggle::after {
@@ -316,7 +318,7 @@ footer li {
 footer {
     color: white;
     border: 6px solid white;
-    border-radius: 3rem;
+    border-radius: 0.7rem;
     height: 300px;
 }
 
