@@ -148,7 +148,7 @@ body {
     background-color: transparent;
 }
 
-.dropdown-menu h1 {
+.dropdown-menu h2 {
     color: white;
 }
 
@@ -304,13 +304,15 @@ body {
     border-radius: 0.7rem;
     margin: 0 auto;
 }
-.appFooter .card{
+
+.appFooter .card {
     background-color: transparent;
     border-radius: 0.7rem;
     border-width: 7px;
     border-color: white;
 }
-.appFooter .fa{
+
+.appFooter .fa {
     color: white;
 }
 
