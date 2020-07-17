@@ -180,9 +180,6 @@ body {
     font-size: 2em;
     font-weight: lighter;
 }
-.menti{
-    font-size: 5rem;
-}
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .main-heading h1 {
@@ -210,9 +207,6 @@ body {
         display: flex;
         justify-content: center;
         letter-spacing: 0.6rem;
-    }
-    .menti{
-        font-size: 4rem;
     }
 }
 
@@ -243,12 +237,14 @@ body {
 .cont {
     font-size: .8rem;
 }
-.cont .card{
+
+.cont .card {
     background-color: transparent;
     border-color: white;
     border-radius: 0.7rem;
     border-width: 6px;
 }
+
 .nav-tabs .nav-link {
     color: white;
     border: none;
