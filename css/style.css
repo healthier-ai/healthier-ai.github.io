@@ -86,7 +86,7 @@ body {
 .img {
     width: 100%;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.85;
 }
 
 #left {
@@ -236,10 +236,13 @@ body {
 
 .cont {
     font-size: .8rem;
-    border: 1px solid white;
-    border-radius: 3rem;
 }
-
+.cont .card{
+    background-color: transparent;
+    border-color: white;
+    border-radius: 0.7rem;
+    border-width: 6px;
+}
 .nav-tabs .nav-link {
     color: white;
     border: none;
