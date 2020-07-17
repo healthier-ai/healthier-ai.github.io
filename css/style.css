@@ -301,8 +301,17 @@ body {
 .mentor .card {
     background-color: transparent;
     border: 7px solid white;
-    border-radius: 2rem;
+    border-radius: 0.7rem;
     margin: 0 auto;
+}
+.appFooter .card{
+    background-color: transparent;
+    border-radius: 0.7rem;
+    border-width: 7px;
+    border-color: white;
+}
+.appFooter .fa{
+    color: white;
 }
 
 .mentor .fa {
