@@ -1,126 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Healthier AI</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthier AI</title>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!--- CSS -->
 
-        <!--- CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"> -->
+    <!-- Font Open-Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-        <link rel="stylesheet" href="css/style.css">
-
-        <!-- JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
-
-    <body>
+    <body id="home">
         <img class="img" id="left" src="./assets/temp.svg" alt="Hexagon">
         <img class="img" id="right" src="./assets/temp.svg" alt="Hexagon">
         <!-- NavBar Starts -->
-        <div style="height: 10vh">
-            <div class="container navbar">
-                <ul class="yo">
-                    <li><a href="#">principles</a></li>
-                    <li><a href="#">programs</a></li>
-                    <li><a href="#">syllabus</a></li>
-                    <li><a href="#">stories</a></li>
-                    <!-- <li>
-                        <a href="#">pr<i class="fa fa-angle-down down" aria-hidden="true"></i>gram</a>
-                        <ul class="dropdown">
-                            <li><a href="#">principles</a></li>
-                            <li><a href="#">principles</a></li>
-                            <li><a href="#">principles</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">syll<i class="fa fa-angle-down down" aria-hidden="true"></i>bus</a>
-                        <ul class="dropdown">
-                            <li><a href="#">principles</a></li>
-                            <li><a href="#">principles</a></li>
-                            <li><a href="#">principles</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">ab<i class="fa fa-angle-down down" aria-hidden="true"></i>ut</a>
-                        <ul class="dropdown">
-                            <li><a href="#">principles</a></li>
-                            <li><a href="#">principles</a></li>
-                            <li><a href="#">principles</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">stories</a></li> -->
-                </ul>
-            </div>
-            <div class="menu-wrap mobile">
-                <input type="checkbox" class="toggler">
-                <div class="hamburger">
-                    <div></div>
+        <div class="text-center">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#home" id="blogo">
+                    <img src="./assets/healthier-ai-web-logo.png" style="height: 50px;" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-xl-5" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-xl-5">
+                        <li class="nav-item active ml-xl-5 ml-lg-3">
+                            <a class="nav-link" href="#">
+                                <h1>principles</h1><span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown ml-xl-5 ml-lg-5">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <h1>pr<i class="fa fa-angle-down down" aria-hidden="true"></i>gram</h1>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item ml-xl-n3 ml-lg-n3" href="./applications.html#goals">
+                                    <h2>Goals</h2>
+                                </a>
+                                <a class="dropdown-item ml-xl-n3 ml-lg-n3" href="./applications.html#application">
+                                    <h2>Applications</h2>
+                                </a>
+                                <a class="dropdown-item ml-xl-n3 ml-lg-n3" href="./applications.html#roles  ">
+                                    <h2>Roles</h2>
+                                </a>
+                            </div>
+                            <li class="nav-item dropdown ml-xl-5 ml-lg-5">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <h1>syllabus</h1>
+                                </a>
+
+                                <li class="nav-item dropdown ml-xl-5 ml-lg-5"></li>
+                                <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <h1>ab<i class="fa fa-angle-down down" aria-hidden="true"></i>ut</h1>
+                                    </a> -->
+                                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">
+                                            <h1>principles</h1>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <h1>principles</h1>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <h1>principles</h1>
+                                        </a>
+                                    </div> -->
+                                <li class="nav-item ml-xl-n6 ml-lg-6">
+                                    <a class="nav-link" href="#">
+                                        <h1>stories</h1>
+                                    </a>
+                                </li>
+                    </ul>
                 </div>
-                <div class="menu" >
-                    <div>
-                        <div>
-                            <ul>
-                                <li><a href="#">principles</a></li>
-                                <li><a href="#">programs</a></li>
-                                <li><a href="#">syllabus</a></li>
-                                <li><a href="#">stories</a></li>
-                                <!--  <li>
-                                     <a href="#">pr<i class="fa fa-angle-down down" aria-hidden="true"></i>gram</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">principles</a></li>
-                                        <li><a href="#">principles</a></li>
-                                        <li><a href="#">principles</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">syll<i class="fa fa-angle-down down" aria-hidden="true"></i>bus</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">principles</a></li>
-                                        <li><a href="#">principles</a></li>
-                                        <li><a href="#">principles</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">ab<i class="fa fa-angle-down down" aria-hidden="true"></i>ut</a> -->
-                                <!-- <ul class="dropdown">
-                                        <li><a href="#">principles</a></li>
-                                        <li><a href="#">principles</a></li>
-                                        <li><a href="#">principles</a></li>
-                                    </ul> -->
-                                <!-- </li>
-                                <li><a href="#">stories</a></li> -->
-                            </ul>
-                        </div>
+            </nav>
+        </div>
+        <!-- NavBar Ends -->
+        <div class="container-lg text-center">
+            <!-- Main Area Starts -->
+
+            <div class="row mt-5">
+                <div class="col-12 mb-xl-5 mb-lg-5 mb-md-5 mb-sm-5 mb-5" style="padding: 0;">
+                    <div class="leaf mb-xl-4 mb-lg-4 mb-sm-4 mb-1 ml-n4">
+                        <img class="x" src="./assets/leaf.png">
+                        <img class="x" src="./assets/leaf.png" id="one">
+                        <img class="x" src="./assets/leaf.png" id="two">
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- NavBar Ends -->
-        <div class="container content">
-            <!-- Main Area Starts -->
-            <div class="row col-sm-12 col-md-12">
-                <img class="logo" src="./assets/logo.png">
+            <div class="col-12 mt-5">
+
                 <div class="main-heading">
                     <h1>healthier ai</h1>
                 </div>
                 <div class="sub-heading">
-                    <h3>design&ensp; inspire&ensp; learn</h3>
+                    <h3 class="text-center">design&ensp; inspire&ensp; learn</h3>
                 </div>
-                <div class="main-content">
-                    <p>Healthier AI aims to be an experience more than a mentoring program to help build leaders who can
-                        voice expectations for responsible data use, drive conversations to create more trustworthy AI.
-                    </p>
-                    <p>
-                        Join our program to get one-on-one mentorship on projects that can contribute to a Healthier AI! 💕
-                    </p>
+                <div class="row buttons ">
+                    <div class=" col-12">
+                        <button type="button" class="btn btn-lg ">
+                            <span id="ah">
+                                Apply Here
+                            </span>
+                        </button>
+                        <!-- <button type="button" class="btn btn-primary btn-lg ml-5">Participants Application</button> -->
+                    </div>
+
                 </div>
             </div>
-        </div>
-        <!-- Main Area Ends -->
+            <div class="main-content">
+                <div class="row">
+                    <div class="col">
+                        <p id="os">Healthier AI aims to be an experience more than a mentoring program to help build leaders who can voice expectations for responsible data use, drive conversations to create more trustworthy AI.
+                        </p>
+                        <p id="os">
+                            Join our program to get one-on-one mentorship on projects that can contribute to a Healthier AI! 💕
+                        </p>
+                    </div>
+                </div>
+                <div class="cont mt-5 mx-0 mb-5 justify-content-center">
+                    <div class="card">
+                        <div class="card-body px-4 py-1">
+                            <div class="row">
+                                <div class="col col-lg-4 col-sm-6 col-12 my-4">
+                                    <h1 class="font-weight-bold" style="color: white; font-size: 3rem;">Purpose</h1>
+                                    <p class="main-two" id="os">
+
+                                        To create a community ingraining different values and perspectives, to collectively voice expectations for responsible data use in AI, bringing data practitioners together to examine the existing research and evidence.
+
+                                    </p>
+                                </div>
+                                <div class="col col-lg-4 col-sm-6 col-12 my-4">
+                                    <h1 class="font-weight-bold" style="color: white; font-size: 3rem;">Outcome</h1>
+                                    <p id="os">
+                                        Leaders, who in their own way are able to drive conversations, discussions that will help developers to incorporate ethics into their design processes and create content which would help people understand AI in a better way.
+                                    </p>
+                                </div>
+                                <div class="col col-lg-4 col-sm-6 col-12 my-4">
+                                    <h1 class="font-weight-bold" style="color: white; font-size: 3rem;">Process</h1>
+                                    <p id="os">
+
+                                        A 10-week mentoring & training program, based on the Mozilla Open Leader Program, helping participants become Healthier AI Advocates!
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Apply Starts -->
+            <div class="container">
+                <div class="col-md-6 card text-center  p-0" style=" margin: 0 auto;
+                float: none; 
+                margin-bottom: 10px; 
+                border-color: white;
+                border-width: 6px;
+                ">
+
+                    <div class="card-body">
+
+                        <p class="card-text" style="color: #6f42c1; font-family: Nexa-bold;font-size: x-large;">
+
+                            We are running our first cohort from <br> 25th May 2020 to 02nd Aug 2020.
+                        </p>
+
+                    </div>
+                    <div class="btn card-footer" style="background:  radial-gradient( circle 1028.6px at 34.6% 23%,  rgba(111,66,193,1) 20%, rgba(187,187,187,1) 100.2% );
+                    font-family: Nexa-Light; border-radius:2px;border: transparent;">
+
+                        <h1 style="color: white;font-family: Nexa-bold;letter-spacing: 1px;">
+                            apply
+                        </h1>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Apply Ends -->
+            <br>
+            <br>
+            <br>
+            <!-- Participation Starts -->
+
+            <!-- Participation Starts -->
+            <br>
+            <br>
+            <br>
+
+            <!-- Toggle -->
+            <div class="container">
+                <div class="tabstyle">
+                    <div class="card cardtop">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active font-weight-bold px-xl-2 px-lg-2 px-md-2 px-sm-2 px-1 py-0" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                                    <h5>mentorship</h5>
+                                </a>
+                                <a class="nav-item nav-link font-weight-bold px-xl-2 px-lg-2 px-md-2 px-sm-2 px-1 py-0" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                    <h5>participants</h5>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="card cardbottom">
+
+                        <div class="card-body" style="text-align: left">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <h5>
+                                        <span id="bold">
+                                            Who can apply?
+                                        </span>
+                                        <br>
+                                        <br>
+                                        <ol>
+                                            <li>
+                                                If you have project ideas that can help create an environment, curricula or tools that can contribute to make AI healthier.
+                                            </li>
+                                            <br>
+                                            <li>
+                                                If you have ideas to voice or showcase how data can be used responsibly in AI, solutions that can support Data Ethics challenges.
+                                            </li>
+                                        </ol>
+
+                                    </h5>
+                                    <div class="container pt-2">
+                                        <button id='bt'>
+                                        know more <span></span>  <i class="fa fa-angle-right"></i>
+                                    </button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                    <h5>
+                                        <span id="bold">
+                                            What’s in it for you?
+                                        </span>
+                                        <br>
+                                        <br>
+                                        <ol>
+                                            <li> Gain valuable coaching skills </li>
+                                            <br>
+                                            <li> Connections in the AI and Open Source Community</li>
+                                        </ol>
+                                        <br>
+                                        <span id="bold">
+                                            Who can apply?
+                                        </span>
+                                        <br>
+                                        <br> If you’ve worked on AI Applications either in Software, Hardware or even Analytics with Data Science and Ethics in the Open Source Space.
+
+
+                                    </h5>
+                                    <div class="container pt-3">
+                                        <button id='bt'>
+                                        know more <span></span>  <i class="fa fa-angle-right"></i>
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Toggle Ends -->
+
+            <br>
+            <br>
+
+
+
+            <div class="mentor mt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="font-weight-bold" style="font-size: 5em;">mentors</h1>
+                    </div>
+                    <div class="col-12">
+                        <h2 class="text-center" id="os">Mentors work closely with participants to help further their Open Science skills and become ambassadors for Open Science practice, training and education in their communities. The mentors will be assigned to one or more projects
+                            (based on their availability) proposed in the program.</h2>
+                    </div>
+                </div>
+
+                <!-- MENTOR HEX -->
+                <br>
+                <br>
+                <div class="mentorHex mt-5 ml-xl-5 ml-lg-5 ml-md-2 pl-xl-5 container-fluid">
+                    <div class="ml-xl-4 ml-lg-4">
+                        <div class="row ml-xl-5 ml-lg-5">
+                            <div class="col col-md-3 col-6">
+                                <svg viewBox="0 0 100 100" version="1.1">
+                                    <defs>
+                                        <pattern id="img1" patternUnits="userSpaceOnUse" width="200" height="100">
+                                            <image xlink:href="./assets/team/shn.png" x="-30" y="-46" width="160"
+                                                height="200" />
+                                        </pattern>
+                                        
+                                    </defs>
+                                    <polygon id="hexborder" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img1)" />
+                                </svg>
+                            </div>
+                            <div class="col col-md-3 col-6 mt-xl-5 mt-lg-4 mt-md-4 mt-sm-5 mt-2 mb-xl-0 mb-lg-0 mb-md-0 mb-sm-0 mb-4 text-left">
+                                <h5 class="font-weight-bold">Shina Dhingra</h5>
+                                <p class="mt-n2">Organizer</p>
+                                <p class="mt-n2">Data Analyst, HSBC. Co-Organizer, Healthier AI
+                                </p>
+                                <div class="mt-n2 menticons">
+                                    <a href="https://www.linkedin.com/in/shinadhingra/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                                    <a href="https://twitter.com/shina_dhingra?lang=en" target="_blank"><i class="fa fa-twitter fa-2x ml-3"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="col col-md-3 col-6 mt-xl-0 mt-lg-0 mt-md-0 mt-sm-5 mt-4">
+                                <svg viewBox="0 0 100 100" version="1.1">
+                                    <defs>
+                                        <pattern id="img2" patternUnits="userSpaceOnUse" width="100" height="100">
+                                            <image xlink:href="./assets/team/pranshu.png" x="-25" width="150"
+                                                height="100" />
+                                        </pattern>
+                                       
+                                    </defs>
+                                    <polygon id="hexborder" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img2)" />
+                                </svg>
+                            </div>
+                            <div class="col col-md-3 col-6 mt-xl-5 mt-lg-4 mt-md-4 mt-sm-5 mt-2 my-xl-0 my-lg-0 my-md-0 my-sm-0 my-4 text-left">
+                                <h5 class="font-weight-bold mt-xl-0 mt-lg-0 mt-md-0 mt-sm-5 mt-2">Pranshu Khanna</h5>
+                                <p class="mt-n2">Organizer</p>
+                                <p class="mt-n2"> Technology Connoisseur. Organizer, Healthier AI.
+                                </p>
+                                <div class="mt-n2 menticons">
+                                    <a href="https://linkedin.com/in/pransh15" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                                    <a href="https://twitter.com/pransh15?lang=en" target="_blank"><i class="fa fa-twitter fa-2x ml-3"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row justify-content-center ml-xl-5 ml-lg-5 py-xl-4 py-lg-4 py-md-4">
+                            <div class="col col-md-3 col-6 mt-xl-0 mt-lg-0 mt-md-0 mt-sm-5 mt-4">
+                                <svg viewBox="0 0 100 100" version="1.1">
+                                        <defs>
+                                            <pattern id="img3" patternUnits="userSpaceOnUse" width="100" height="100">
+                                                <image xlink:href="./assets/team/devansh.jpg" x="-25" width="150"
+                                                    height="100" />
+                                            </pattern>
+                                        </defs>
+                                        <polygon id="hexborder" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img3)" />
+                                    </svg>
+                            </div>
+                            <div class="col col-md-3 col-6 mt-xl-5 mt-lg-4 mt-md-4 mt-sm-5 mt-2 my-xl-0 my-lg-0 my-md-0 my-sm-0 my-4 text-left">
+                                <h5 class="font-weight-bold mt-xl-0 mt-lg-0 mt-md-0 mt-sm-5 mt-2">Devansh Gajjar</h5>
+                                <p class="mt-n2">Designer</p>
+                                <p class="mt-n2">Designer trying to be useful.
+                                </p>
+                                <div class="mt-n2 menticons">
+                                    <a href="https://www.linkedin.com/in/devansh-gajjar/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                                    <a href="https://twitter.com/gajjar_devansh?lang=en" target="_blank"><i class="fa fa-twitter fa-2x ml-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3 ml-xl-5 ml-lg-5">
+                            <div class="col col-md-3 col-6 mt-xl-0 mt-lg-0 mt-md-0 mt-sm-4 mt-3">
+                                <svg viewBox="0 0 100 100" version="1.1">
+                                        <defs>
+                                            <pattern id="img4" patternUnits="userSpaceOnUse" width="100" height="100">
+                                                <image xlink:href="./assets/team/dhruv.jpeg" x="-25" width="150"
+                                                    height="100" />
+                                            </pattern>
+
+                                            
+                                        </defs>
+                                        <polygon id="hexborder" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img4)" />
+                                    </svg>
+                            </div>
+                            <div class="col col-md-3 col-6 mt-xl-5 mt-lg-4 mt-md-4 mt-sm-5 mt-2 my-xl-0 my-lg-0 my-md-0 my-sm-0 my-3 text-left">
+                                <h5 class="font-weight-bold mt-xl-0 mt-lg-0 mt-md-0 mt-sm-5 mt-2">Dhruv Jasani</h5>
+                                <p class="mt-n2">Web Developer</p>
+                                <p class="mt-n2">Web Developer,Budding Gatsby, Contributor at Mozilla Gujarat
+                                </p>
+                                <div class="mt-n2 menticons">
+                                    <a href="http://linkedin.com/in/dhruv-jasani-3290b01a0" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                                    <a href="https://twitter.com/jd_jasani" target="_blank"><i class="fa fa-twitter fa-2x ml-3"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="col col-md-3 col-6 mt-xl-0 mt-lg-0 mt-md-0 mt-sm-5 mt-5">
+                                <svg viewBox="0 0 100 100" version="1.1">
+                                        <defs>
+                                            <pattern id="img5" patternUnits="userSpaceOnUse" width="100" height="100">
+                                                <image xlink:href="./assets/team/arpan.jpg" x="-25" width="150"
+                                                    height="100" />
+                                            </pattern>
+                                        </defs>
+                                        <polygon id="hexborder" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img5)" />
+                                    </svg>
+                            </div>
+                            <div class="col col-md-3 col-6 mt-xl-5 mt-lg-4 mt-md-4 mt-sm-5 mt-5 my-xl-0 my-lg-0 my-md-0 my-sm-0 my-4 text-left">
+                                <h5 class="font-weight-bold mt-xl-0 mt-lg-0 mt-md-0 mt-sm-5 mt-2">Arpan Patel</h5>
+                                <p class="mt-n2">Web Developer</p>
+                                <p class="mt-n2">Web Dev, SVIT Campus Club Lead, Flutter Vadodara Co-Organizer
+                                </p>
+                                <div class="mt-n2 menticons">
+                                    <a href="https://arps18.github.io/" target="_blank"><i class="fa fa-globe fa-2x"></i></a>
+                                    <a href="https://twitter.com/arps_1899" target="_blank"><i class="fa fa-twitter fa-2x ml-3"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <!-- <footer class="my-3"> -->
+                    <div class="my-3 card">
+                        <div class="row">
+                            <div class="col col-sm-10 col-12">
+                                <h1 class="ml-xl-5 ml-lg-5 ml-md-5 ml-sm-4 ml-2 mt-1 p-2 font-weight-bold text-left" style="font-size: 2rem;">get involved</h1>
+                                <h4 class="ml-xl-5 ml-lg-5 ml-md-5 ml-sm-4 ml-2 p-2">If you think you can help then please check out our contributors’<br>guidelines and our
+                                    <a href="">
+                                        <i class="fa fa-github fa-2x"></i>
+                                    </a>
+                                </h4>
+                                <h4 class="ml-xl-5 ml-lg-5 ml-md-5 ml-sm-4 ml-2 p-2">Please note that it’s very important to us that we maintain a positive<br>and supportive environment for everyone who wants to participate.
+                                    <br>When you join us we ask that you follow our *github link of<br>Code of Conduct issue from repo* in all interactions both on and offline.</h4>
+                                <h4 class="ml-xl-5 ml-lg-5 ml-md-5 ml-sm-4 ml-2 p-2">If you want to report a problem or suggest an enhancement<br>we’d love for you to open an issue on our Github because then
+                                    <br>we can get right on it.</h4>
+                            </div>
+                            <div class="col col-sm-2 col-12 icons">
+                                <a href="https://twitter.com/HealthierAI" target="_blank">
+                                    <li style="list-style: none"><i class="fa fa-twitter fa-2x"></i></li>
+                                </a>
+                                <a href="mailto:team@healthier.org" target="_blank">
+                                    <li style="list-style: none"><i class="fa fa-envelope fa-2x"></i></li>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Main Area Ends -->
+            <!--JS CSS-->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
     </body>
 
 </html>
+
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
