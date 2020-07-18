@@ -214,6 +214,9 @@ body {
     .mentor-heading h1{
         font-size: 0.9em;
     }
+    .apptimeline {
+        font-size: 0.6em;
+    }
 }
 
 .buttons .btn {
@@ -315,6 +318,14 @@ body {
     border: 7px solid white;
     border-radius: 0.7rem;
     margin: 0 auto;
+}
+.time .card{
+    background-color: transparent;
+    border: 7px solid white;
+    border-radius: 0.7rem;
+}
+.apptimeline h1{
+    font-size: 4em;
 }
 
 .appFooter .card {
