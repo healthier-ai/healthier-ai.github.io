@@ -208,6 +208,18 @@ body {
         justify-content: center;
         letter-spacing: 0.6rem;
     }
+    .rolemain {
+        font-size: 0.75em;
+    }
+    .org-heading{
+        font-size: 0.7em;
+    }
+    .apptimeline {
+        font-size: 0.6em;
+    }
+    .mentor-heading{
+        font-size: 0.9em;
+    }
 }
 
 .buttons .btn {
@@ -280,6 +292,12 @@ body {
 .mentor h2 {
     line-height: 1.5;
 }
+.rolemain h1{
+    font-size: 4em;
+}
+.org-heading h1{
+    font-size: 5em;
+}
 
 .imgs {
     height: 75px;
@@ -303,6 +321,17 @@ body {
     border: 7px solid white;
     border-radius: 0.7rem;
     margin: 0 auto;
+}
+.mentor-heading h1{
+    font-size: 5em;
+}
+.time .card{
+    background-color: transparent;
+    border: 7px solid white;
+    border-radius: 0.7rem;
+}
+.apptimeline h1{
+    font-size: 4em;
 }
 
 .appFooter .card {
