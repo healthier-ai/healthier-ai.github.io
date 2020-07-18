@@ -210,6 +210,12 @@ body {
         justify-content: center;
         letter-spacing: 0.6rem;
     }
+    .rolemain {
+        font-size: 0.75em;
+    }
+    .mentor-heading h1{
+        font-size: 0.9em;
+    }
 }
 
 .buttons .btn {
@@ -281,6 +287,12 @@ body {
 
 .mentor h2 {
     line-height: 1.5;
+}
+.rolemain h1{
+    font-size: 4em;
+}
+.mentor-heading {
+    font-size: 5em;
 }
 
 .imgs {
