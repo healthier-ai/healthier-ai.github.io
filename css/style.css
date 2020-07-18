@@ -211,11 +211,14 @@ body {
     .rolemain {
         font-size: 0.75em;
     }
-    .mentor-heading h1{
-        font-size: 0.9em;
+    .org-heading{
+        font-size: 0.7em;
     }
     .apptimeline {
         font-size: 0.6em;
+    }
+    .mentor-heading{
+        font-size: 0.9em;
     }
 }
 
@@ -292,7 +295,7 @@ body {
 .rolemain h1{
     font-size: 4em;
 }
-.mentor-heading {
+.org-heading h1{
     font-size: 5em;
 }
 
@@ -319,6 +322,9 @@ body {
     border-radius: 0.7rem;
     margin: 0 auto;
 }
+.mentor-heading h1{
+    font-size: 5em;
+}
 .time .card{
     background-color: transparent;
     border: 7px solid white;
@@ -333,7 +339,6 @@ body {
     border-radius: 0.7rem;
     border-width: 7px;
     border-color: white;
-    height: 300px;
 }
 
 .appFooter .fa {
