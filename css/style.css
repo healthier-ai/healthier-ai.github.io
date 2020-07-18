@@ -54,7 +54,9 @@ body {
     position: absolute;
     transform: rotate(-30deg);
     transform-origin: bottom;
+
     height: 124px;
+
 }
 
 #one {
