@@ -54,9 +54,7 @@ body {
     position: absolute;
     transform: rotate(-30deg);
     transform-origin: bottom;
-
     height: 124px;
-
 }
 
 #one {
@@ -324,6 +322,7 @@ body {
     border-radius: 0.7rem;
     border-width: 7px;
     border-color: white;
+    height: 300px;
 }
 
 .appFooter .fa {
