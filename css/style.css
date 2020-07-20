@@ -3,6 +3,7 @@ body {
     background: #6f42c1;
     font-family: Nexa-Light;
     color: white;
+    scroll-behavior: smooth;
 }
 
 
